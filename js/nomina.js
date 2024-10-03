@@ -14,10 +14,14 @@ function realizarTodasOperciones(){
         if (data.error) {
             alert(data.error);
         } else {
-            document.getElementById('resultadoSuma').textContent = `Suma: ${data.suma}`;
-            document.getElementById('resultadoResta').textContent = `Resta: ${data.resta}`;
-            document.getElementById('resultadoMultiplicacion').textContent = `Multiplicacion: ${data.multiplicacion}`;
-            document.getElementById('resultadoDivision').textContent = `Division: ${data.division}`;
+            document.getElementById('resultadoSalario').textContent = `Salario: ${data.salario}`;
+            document.getElementById('resultadoSalud').textContent = `Salud: ${data.salud}`;
+            document.getElementById('resultadoSubTransporte').textContent = `Subsidio de Transporte: ${data.subTransporte}`;
+            document.getElementById('resultadoPension').textContent = `Pension: ${data.pension}`;
+            document.getElementById('resultadoArl').textContent = `Arl: ${data.arl}`;
+            document.getElementById('resultadoRetencion').textContent = `Retencion: ${data.retencion}`;
+            document.getElementById('resultadoDeducible').textContent = `Deducible: ${data.deducible}`;
+            document.getElementById('resultadoSalarioTotal').textContent = `Salario Total: ${data.pagoTotal}`;
         }
     })
     .catch(error => console.error('Error: ', error));
